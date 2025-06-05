@@ -10,6 +10,9 @@ client.on('messageCreate', (message) => {
     if (message.content === '!hello') {
         message.reply('Olá, mundo!');
     }
+    if (message.content === '!Bird') {
+        message.reply('Piu Piu')
+    }
 });
 
 client.login(process.env.BOT_TOKEN); // vem do GitHub Secrets, não do .env
